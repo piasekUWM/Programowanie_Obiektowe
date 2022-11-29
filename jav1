@@ -1,0 +1,142 @@
+import java.util.Scanner;
+import java.lang.Math;
+
+//A
+
+//public class Main {
+//    public static void main(String[] args) {
+//        Scanner myObj = new Scanner(System.in);
+//        System.out.println("Podaj n: ");
+//        int n = myObj.nextInt();
+//        int wynik = 0;
+//        for (int x = 1; x <= n; x++){
+//            int dodawanie = myObj.nextInt();
+//            wynik += dodawanie;
+//        }
+//        System.out.println("Wynik: " + wynik);
+//    }
+//}
+
+//B
+
+//public class Main {
+//    public static void main(String[] args) {
+//        Scanner myObj = new Scanner(System.in);
+//        System.out.println("Podaj n: ");
+//        int n = myObj.nextInt();
+//        int wynik = 1;
+//        for (int x = 1; x <= n; x++){
+//            int mnozenie = myObj.nextInt();
+//            wynik = wynik * mnozenie;
+//        }
+//        System.out.println("Wynik: " + wynik);
+//    }
+//}
+
+//C
+
+//public class Main {
+//    public static void main(String[] args) {
+//        Scanner myObj = new Scanner(System.in);
+//        System.out.println("Podaj n: ");
+//        int n = myObj.nextInt();
+//        int wynik = 0;
+//        for (int x = 1; x <= n; x++){
+//            int dodawanie = myObj.nextInt();
+//            wynik += Math.abs(dodawanie);
+//        }
+//        System.out.println("Wynik: " + wynik);
+//    }
+//}
+
+//D
+
+//public class Main {
+//    public static void main(String[] args) {
+//        Scanner myObj = new Scanner(System.in);
+//        System.out.println("Podaj n: ");
+//        int n = myObj.nextInt();
+//        double wynik = 0;
+//        for (int x = 1; x <= n; x++){
+//            int dodawanie = myObj.nextInt();
+//            int wart = Math.abs(dodawanie);
+//            wynik += Math.sqrt(wart);
+//        }
+//        System.out.println("Wynik: " + wynik);
+//    }
+//}
+
+//E
+
+//public class Main {
+//    public static void main(String[] args) {
+//        Scanner myObj = new Scanner(System.in);
+//        System.out.println("Podaj n: ");
+//        int n = myObj.nextInt();
+//        int wynik = 1;
+//        for (int x = 1; x <= n; x++){
+//            int mnozenie = myObj.nextInt();
+//            wynik *= Math.abs(mnozenie);
+//        }
+//        System.out.println("Wynik: " + wynik);
+//    }
+//}
+
+//F
+
+//public class Main {
+//    public static void main(String[] args) {
+//        Scanner myObj = new Scanner(System.in);
+//        System.out.println("Podaj n: ");
+//        int n = myObj.nextInt();
+//        int wynik = 0;
+//        for (int x = 1; x <= n; x++){
+//            int dodawanie = myObj.nextInt();
+//            wynik += Math.pow(dodawanie, 2);
+//        }
+//        System.out.println("Wynik: " + wynik);
+//    }
+//}
+
+//G
+
+//public class Main {
+//    public static void main(String[] args) {
+//        Scanner myObj = new Scanner(System.in);
+//        System.out.println("Podaj n: ");
+//        int n = myObj.nextInt();
+//        int wynik1 = 0;
+//        int wynik2 = 1;
+//        for (int x = 1; x <= n; x++){
+//            int dodawanie = myObj.nextInt();
+//            wynik1 += dodawanie;
+//            wynik2 *= dodawanie;
+//        }
+//
+//        System.out.println("Wynik 1: " + wynik1);
+//        System.out.println("\nWynik 2: " + wynik2);
+//    }
+//}
+
+//H
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner myObj = new Scanner(System.in);
+        System.out.println("Podaj n: ");
+        int n = myObj.nextInt();
+        int wynik = 0;
+        for (int x = 1; x <= n; x++){
+            if (x%2==0){
+                int odejmowanie = myObj.nextInt();
+                wynik -= odejmowanie;
+            }
+            else{
+                int dodawanie = myObj.nextInt();
+                wynik += dodawanie;
+            }
+        }
+        wynik += Math.pow(-1, n + 1) * wynik;
+        System.out.println("Wynik: " + wynik);
+    }
+}
